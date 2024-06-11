@@ -1,7 +1,7 @@
 {
   "name": "ton-starter-twa-vite",
   "private": false,
-  "homepage":".",
+  "homepage":"https://commerchant.github.io/twa-tap/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
