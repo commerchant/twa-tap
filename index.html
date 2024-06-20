@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="https://commerchant.github.io/twa-tap/assets/index-4a1992ee.js"></script>
     <link rel="stylesheet" href="https://commerchant.github.io/twa-tap/assets/index-fcffda84.css">
   </head>
-  <body>
+  <body onload = "window.Telegram.WebApp.expand()">
     <div id="root"></div>
     
    <script>
@@ -17,7 +17,7 @@
         let converted = JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g,'":"') + '"}', function(key, value) { return key===""?value:decodeURIComponent(value) })
             let u = JSON.parse(converted.user);
         alert("User is " + u.username);
-        if(window.Telegram.WebApp.ready()) window.Telegram.WebApp.expand()
+        if(window.Telegram.WebApp.ready()) window.Telegram.WebApp.expand();
     </script>
   </body>
 </html>
