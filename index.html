@@ -14,7 +14,9 @@
     
    <script>
         let d = window.Telegram.WebApp.initData;
-        alert("Today's date is " + d);
+        let converted = JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g,'":"') + '"}', function(key, value) { return key===""?value:decodeURIComponent(value) })
+JSON.parse(converted.user)
+        alert("User is " + converted.user);
     </script>
   </body>
 </html>
