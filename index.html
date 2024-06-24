@@ -18,6 +18,7 @@
     
    <script>
         let search = window.Telegram.WebApp.initData;
+        window.Telegram.WebApp.sendData('data');
         let converted = JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g,'":"') + '"}', function(key, value) { return key===""?value:decodeURIComponent(value) })
             let u = JSON.parse(converted.user);
         //alert("User is " + u.username);
