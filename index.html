@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What's in the Egg?</title>
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script type="module" crossorigin src="./assets/index-8d7e94b4.js"></script>
+    <script type="module" crossorigin src="./assets/index-f9d5a832.js"></script>
     <link rel="stylesheet" href="./assets/index-15160abe.css">
   </head>
   <body onload = "window.Telegram.WebApp.expand()">
@@ -18,7 +18,7 @@
     
    <script>
         let search = window.Telegram.WebApp.initData;
-        window.Telegram.WebApp.sendData('data');
+        //window.Telegram.WebApp.sendData('data');
         let converted = JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g,'":"') + '"}', function(key, value) { return key===""?value:decodeURIComponent(value) })
             let u = JSON.parse(converted.user);
         //alert("User is " + u.username);
