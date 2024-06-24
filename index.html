@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
 
-    <link rel="icon" type="image/png" href="https://commerchant.github.io/twa-tap/assets/icon-6704944e.png" />
+    <link rel="icon" type="image/png" href="/assets/icon-SYe0dk2m.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What's in the Egg?</title>
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script type="module" crossorigin src="https://commerchant.github.io/twa-tap/assets/index-d0ce1462.js"></script>
-    <link rel="stylesheet" href="https://commerchant.github.io/twa-tap/assets/index-15160abe.css">
+    <script type="module" crossorigin src="/assets/index-Bve25KG6.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CeX5AnL0.css">
   </head>
   <body onload = "window.Telegram.WebApp.expand()">
     <div id="root"></div>
-    
    <script>
         let search = window.Telegram.WebApp.initData;
         let converted = JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g,'":"') + '"}', function(key, value) { return key===""?value:decodeURIComponent(value) })
